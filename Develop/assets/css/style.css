@@ -21,7 +21,7 @@ body {
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color:skyblue;
 }
 
 .header div {
@@ -86,11 +86,12 @@ p {
     background-color: #2589bd;
 }
 
+
+/*I took the following code and moved it into one class ".aside-settings".
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,7 +101,14 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
+.aside-settings{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
 
+
+/* I took the following code and moved it into one class ".aside-settings h3".
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -115,7 +123,14 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
+.aside-settings h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+
+/*I took the fallowing code and moved it into one class ".aside-settings img".
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -133,7 +148,14 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+*/
+.aside-settings img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
 
+/*I took the following code and moved it into one class ".article-settings".
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -160,7 +182,18 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+*/
+.article-settings{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
 
+
+/* I took the following code and moved it into one class ".article-settings img".
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -172,7 +205,13 @@ p {
 .social-media-marketing img {
     max-height: 200px;
 }
+*/
 
+.article-settings img{
+    max-height: 200px;
+}
+
+/*I took the fallowing code and moved it into one class ".article-settings h2".
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -187,7 +226,11 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+*/
+.article-settings h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 .footer {
     padding: 30px;
     clear: both;
