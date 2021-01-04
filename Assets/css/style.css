@@ -1,243 +1,158 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #d9dcd6;
+  background-color: #d9dcd6;
 }
 
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+  display: inline-block;
+  font-size: 48px;
 }
 
 .header h1 .seo {
-    color:skyblue;
+  color: #d9dcd6;
 }
 
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .header div ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
 
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
 }
 
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
 }
 
-/*major update*/
-/*I took the following code and moved it into one class ".aside-settings".
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/*benefit-lead,benefit-brand, and benefit-cost all have the same attributes so i refactored it by grouping them together. */
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-*/
-.aside-settings{
-    margin-bottom: 32px;
-    color: #ffffff;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
-
-/* I took the following code and moved it into one class ".aside-settings h3".
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+/* because all the h3 in the aside had the same attributes i refactored it by targeting the element they were in */
+aside h3 {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+/* because all the images in the aside have the same attributes i refactored the and grouped all the classes and targeted it with the element tags. */
+aside img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
-.aside-settings h3{
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-/*I took the fallowing code and moved it into one class ".aside-settings img".
+/*  
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 */
-.aside-settings img{
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/*I took the following code and moved it into one class ".article-settings".
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
+/* search-engine-optimization,online-reputation-management, and social-media-marketing have the same attributes i am going to refactor them by grouping them together.*/
+.search-engine-optimization,
+.online-reputation-management,
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
-*/
-.article-settings{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-
-/* I took the following code and moved it into one class ".article-settings img".
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
+/* search search-engine-optimization,online-reputation-management, and social-media-marketing have the same attributes i grouped them together */
+.search-engine-optimization img,
+.online-reputation-management img,
 .social-media-marketing img {
-    max-height: 200px;
+  max-height: 200px;
 }
-*/
-
-.article-settings img{
-    max-height: 200px;
+/* search-engine-optimization h2, online-reputation-management h2, and social-media-marketing h2 all have the came attribute i am going to target the h2 nested in the article*/
+article h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
 }
-
-/*I took the fallowing code and moved it into one class ".article-settings h2".
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-*/
-.article-settings h2{
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
+footer h2 {
+  font-size: 20px;
 }
